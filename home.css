@@ -1,0 +1,57 @@
+body{
+    margin:0;
+}
+.navbar{
+    position: sticky;
+    margin: 0px;
+    /* border: 2px solid red; */
+    font-family: "McLaren", cursive;
+    background-color:rgba(251, 248, 248, 0.923);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    height: 6vh;
+    top: 0;
+    overflow: hidden;
+}
+
+#user{
+    font-size: 20px;
+    width:fit-content;
+    height: 5vh;
+    padding-top:10px;
+    text-align: left;
+}
+#Check,#Create,#userName{
+    margin-right:5vw; 
+}
+#label{
+    font-family: "McLaren", cursive;
+    margin-left:1vw;
+    margin-right: 50vw;
+}
+.links{
+    transition: all 1s;
+}
+.links:hover{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 15px;
+}
+
+.note {
+    background: rgba(246, 255, 0, 0.219);
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    min-height: 200px;
+    margin: 16px;
+    float: left;
+    word-wrap: break-word;
+  }
+.note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+.note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
