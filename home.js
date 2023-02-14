@@ -1,8 +1,12 @@
 let count=1;
 document.getElementById('Create').addEventListener("click",createTask);
 document.getElementById("Check").addEventListener("click",goto);
+document.getElementById("userName").addEventListener("click",gotoLogin);
 function goto(){
   window.open('taskRemoved.html');
+}
+function gotoLogin(){
+  window.open('login.html');
 }
 function createTask(){
     let head = prompt("Enter the task Name");
@@ -19,7 +23,7 @@ function createTask(){
     ${body}
     </p> 
     <button type="button" class="btn btn-outline-success" id="edit"${count} onclick="edit(getId(this))">Edit</button>
-    <button type="button" class="btn btn-outline-danger" id="remove"${count} onclick="remove(getId(this))">Remove</button>
+    <button type="button" class="btn btn-outline-danger" id="remove"${count} onclick="removeElement(getId(this))">Remove</button>
     </div>`
     let prev=document.getElementById('container').innerHTML;
     prev=prev+task;
@@ -40,11 +44,11 @@ function edit(obj){
   <p>
     ${body}
   </p> 
-  <button type="button" class="btn btn-outline-success" id="edit"${count} onclick="edit()">Edit</button>
-  <button type="button" class="btn btn-outline-danger" id="remove"${count} onclick="remove()">Remove</button>
+  <button type="button" class="btn btn-outline-success" id="edit"${count} onclick="edit(geId(this))">Edit</button>
+  <button type="button" class="btn btn-outline-danger" id="remove"${count} onclick="removeElement(getId(this))">Remove</button>
   `
 }
-function remove(obj){
+function removeElement(obj){
   let doc=document.getElementById(obj).parentNode;
   doc.remove();
 }
