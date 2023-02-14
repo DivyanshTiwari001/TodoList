@@ -11,6 +11,7 @@ body{
     height: 6vh;
     top: 0;
     overflow: hidden;
+    cursor: pointer;
 }
 
 #user{
@@ -30,10 +31,12 @@ body{
 }
 .links{
     transition: all 1s;
-}
+} 
 .links:hover{
     color: rgba(0, 0, 0, 0.4);
     font-size: 15px;
+    transition: all 1s;
+    cursor: pointer;
 }
 
 .note {
